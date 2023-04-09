@@ -23,8 +23,8 @@ const Upload = () => {
    const [savingPost, setSavingPost] = useState(false);
 
    const router = useRouter()
-   const { userProfile }: any = useAuthStore();
 
+   const { userProfile }: any = useAuthStore();
 
    const uploadVideo = async (e: any) => {
       const selectedFile = e.target.files[0];
