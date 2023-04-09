@@ -23,13 +23,8 @@ const Upload = () => {
    const [savingPost, setSavingPost] = useState(false);
 
    const router = useRouter()
+   const { userProfile }: any = useAuthStore();
 
-   const [user, setUser] = useState<IUser | null>();
-   const { userProfile } = useAuthStore();
-
-   useEffect(() => {
-      setUser(userProfile)
-   }, [])
 
    const uploadVideo = async (e: any) => {
       const selectedFile = e.target.files[0];
@@ -65,10 +60,10 @@ const Upload = () => {
                   _ref: videoAsset?._id,
                },
             },
-            userId: user?._id,
+            userId: userProfile?._id,
             postedBy: {
                _type: 'postedBy',
-               _ref: user?._id,
+               _ref: userProfile?._id,
             },
             topic,
          };
