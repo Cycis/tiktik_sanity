@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     setIsSSR(false)
-  }, []);
+  }, [isSSR]);
 
   if (isSSR) return null;
 

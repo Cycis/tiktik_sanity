@@ -37,7 +37,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
       if (post && videoRef?.current) {
          videoRef.current.muted = isVideoMuted;
       }
-   }, [isVideoMuted])
+   }, [isVideoMuted, post])
 
    return (
       <div className='flex flex-col border-b-2 border-gray-200 pb-6'>

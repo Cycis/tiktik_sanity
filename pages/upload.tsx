@@ -13,7 +13,7 @@ import { IUser } from '@/types'
 import { BASE_URL } from '@/utils'
 
 
-const upload = () => {
+const Upload = () => {
    const [isLoading, setIsLoading] = useState(false);
    const [videoAsset, setVideoAsset] = useState<SanityAssetDocument>();
    const [wrongFileType, setWrongFileType] = useState(false)
@@ -183,4 +183,4 @@ const upload = () => {
    )
 }
 
-export default upload
+export default Upload

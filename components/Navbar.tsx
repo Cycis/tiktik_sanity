@@ -22,7 +22,7 @@ const Navbar = () => {
 
    useEffect(() => {
       setUser(userProfile)
-   }, [])
+   }, [userProfile])
 
    const handleSearch = (e: React.FormEvent) => {
       e.preventDefault()
