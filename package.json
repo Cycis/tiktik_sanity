@@ -22,6 +22,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "typescript": "5.0.2",
+    "uuidv4": "^6.2.13",
     "vercel": "^28.18.4",
     "zustand": "^4.3.7"
   },
